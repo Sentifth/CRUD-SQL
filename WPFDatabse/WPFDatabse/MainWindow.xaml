@@ -5,18 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFDatabse"
         mc:Ignorable="d"
-        Title="Contactos" Height="300" Width="300">
+        Title="Contactos" Height="250" Width="400">
     <Grid>
-        <StackPanel Margin="10">
-            <TextBox x:Name="txtNombre"
-                     Margin="0,0,0,5"/>
-            <TextBox x:Name="txtCorreo"
-                     Margin="0,0,0,5"/>
-            <TextBox x:Name="txtTelefono"
-                     Margin="0,0,0,5"/>
+        <StackPanel Margin="101,20,20,20">
+            <TextBox x:Name="txtNombre" Height="26"
+                     Margin="0,0,0,15"/>
+            <TextBox x:Name="txtCorreo" Height="26"
+                     Margin="0,0,0,15"/>
+            <TextBox x:Name="txtTelefono" Height="26"
+                     Margin="0,0,0,15"/>
             <Button Content="Guardar"
                     x:Name="btnGuardar"
                     Click="btnGuardar_Click"/>
         </StackPanel>
+        <Label Content="Nombre:" FontFamily="Comic Sans MS" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top" Width="86" Height="26"/>
+        <Label Content="Correo:" FontFamily="Comic Sans MS" HorizontalAlignment="Left" Margin="10,61,0,0" VerticalAlignment="Top" Width="86" Height="26"/>
+        <Label Content="Teléfono:" FontFamily="Comic Sans MS" HorizontalAlignment="Left" Margin="10,102,0,0" VerticalAlignment="Top" Width="86" Height="26"/>
     </Grid>
 </Window>
