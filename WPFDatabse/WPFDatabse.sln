@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29326.143
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFDatabse", "WPFDatabse\WPFDatabse.csproj", "{122A81F3-AA59-4335-A1F8-CCB012FE861E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Videjuegos", "WPFDatabse\Videjuegos.csproj", "{122A81F3-AA59-4335-A1F8-CCB012FE861E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

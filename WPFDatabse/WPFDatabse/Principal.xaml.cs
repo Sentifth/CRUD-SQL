@@ -30,8 +30,7 @@ namespace WPFDatabse
         }
         void LeerBaseDatos()
         {
-            using (SQLite.SQLiteConnection conn = 
-                new SQLite.SQLiteConnection(App.databasePath))
+            using (SQLite.SQLiteConnection conn =  new SQLite.SQLiteConnection(App.databasePath))
             {
                 conn.CreateTable<Contactos>();
                 contactos = (conn.Table<Contactos>().ToList()).
@@ -54,6 +53,12 @@ namespace WPFDatabse
             WPFDatabse.EliminarDatos form = new WPFDatabse.EliminarDatos();
             form.ShowDialog();
 
+        }
+
+        private void BtnActualizar_Click(object sender, RoutedEventArgs e)
+        {
+            WPFDatabse.Actualizar form = new WPFDatabse.Actualizar();
+            form.ShowDialog();
         }
     }
 }

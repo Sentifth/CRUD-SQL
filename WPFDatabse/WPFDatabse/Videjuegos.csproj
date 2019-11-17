@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{122A81F3-AA59-4335-A1F8-CCB012FE861E}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>WPFDatabse</RootNamespace>
-    <AssemblyName>WPFDatabse</AssemblyName>
+    <RootNamespace>Videojuegos</RootNamespace>
+    <AssemblyName>Videojuegos</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -72,6 +72,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Actualizar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="EliminarDatos.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -80,11 +84,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Compile Include="Actualizar.xaml.cs">
+      <DependentUpon>Actualizar.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Clases\Contactos.cs" />
+    <Compile Include="Class1.cs" />
     <Compile Include="EliminarDatos.xaml.cs">
       <DependentUpon>EliminarDatos.xaml</DependentUpon>
     </Compile>
